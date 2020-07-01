@@ -1,1 +1,1 @@
-alert("Hi from app.js");
+// alert("Hi from app.js");
