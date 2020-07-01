@@ -6,6 +6,10 @@ This was a hands-on project from [The Advanced Web Developer Bootcamp](https://w
 
 # Demo
 
+<div align="center">
+  <img src="demo/ToDoDemo.png" />
+</div>
+
 # Features
 
 -   A simple app using jQuery, Express.js, and Node.js
