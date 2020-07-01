@@ -1,12 +1,27 @@
-var express = require("express");
-var router = express.Router();
-var db = require("../models");
-var helpers = require("../helpers/todos");
+/*
+|--------------------------------------------------------------------------
+| Todos Route
+|--------------------------------------------------------------------------
+|
+| [Method]  [Route]
+| GET       /api/todos
+| POST      /api/todos
+| GET       /api/todos/:id
+| POST      /api/todos/:id
+| PATCH     /api/todos/:id
+| DELETE    /api/todos/:id
+| 
+*/
 
-router.route("/").get(helpers.getTodos).post(helpers.createTodo);
+var express = require('express');
+var router = express.Router();
+var db = require('../models');
+var helpers = require('../helpers/todos');
+
+router.route('/').get(helpers.getTodos).post(helpers.createTodo);
 
 router
-	.route("/:todoId")
+	.route('/:todoId')
 	.get(helpers.getTodo)
 	.put(helpers.updateTodo)
 	.delete(helpers.deleteTodo);
