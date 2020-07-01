@@ -8,6 +8,8 @@ app.get("/", function (req, res) {
 	res.send("HELLO FROM ROOT ROUTE");
 });
 
+app.use("/api/todos", todoRoutes);
+
 app.listen(port, function () {
 	console.log("APP IS RUNNING ON PORT " + port);
 });
