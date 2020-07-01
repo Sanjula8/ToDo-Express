@@ -5,8 +5,6 @@ body {
 	background: #ecf0f1;
 }
 
-/** HEADER STYLES **/
-
 header {
 	text-align: center;
 }
@@ -28,62 +26,40 @@ header h2 {
 	font-weight: 300;
 }
 
-/** FORM STYLES **/
-
-.form {
-	width: 800px;
-	margin-bottom: 5rem auto 2rem;
+.section {
+	width: 100%;
+	margin-bottom: 1rem;
 }
 
 #todoInput {
+	font: 300 1.2rem "Ubuntu", sans-serif;
+	color: #34495e;
 	width: 100%;
-	height: 60px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid #34495e;
-	outline: none;
-	font: 300 1.2rem "Ubuntu", sans-serif;
-	color: #34495e;
-}
-
-/* .input {
-	font: 300 1.2rem "Ubuntu", sans-serif;
-	color: #34495e;
-	width: 800px;
 	height: 2rem;
 	outline: none;
 	background: none;
 	border: none;
 	border-bottom: 1px solid #34495e;
-} */
+}
 
-/** LIST STYLES **/
-/* 
 ul,
 ol {
 	list-style-position: inside;
-} */
+}
 
 .list {
-	/* width: 95%; */
-
-	width: 800px;
-	margin: 0 auto;
+	width: 95%;
 }
 
 .task {
-	width: 100%;
-	/* height: 2.5rem; */
-	height: 60px;
-	/* line-height: 2.5rem; */
-	line-height: 60px;
-	/* font-size: 1rem; */
-	font-size: 20px;
-	padding: 0 20px;
-	/* padding-left: 0.5rem; */
 	color: #34495e;
+	padding-left: 0.5rem;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1rem;
 	transition: all 0.3s ease;
-	/* overflow-x: hidden; */
+	overflow-x: hidden;
 }
 
 .task:hover {
@@ -98,17 +74,6 @@ ol {
 .done {
 	text-decoration: line-through;
 	color: #bdc3c7;
-}
-
-li span {
-	float: right;
-	color: #c0392b;
-	transition: all 0.3s;
-	opacity: 0;
-}
-
-li span:hover {
-	color: #e74c3c;
 }
 
 .icon {
